@@ -1,0 +1,19 @@
+<h1>Add a new Game Dev</h1>
+
+<h2>Please enter your companies infomration</h2>
+
+<%= form_for @developer do |f| %>
+    
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :ceo %>
+    <%= f.text_field :ceo %>
+    
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+
+    <%= f.submit %>
+
+<%end%>
+    

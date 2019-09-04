@@ -1,0 +1,12 @@
+<h1>Here a list of Game Developer Companies</h1>
+
+<%= link_to "Add a Game Dev", new_developer_path %>
+
+<ul>
+    <%@developers.each do |developer|%>
+        <li><%=link_to developer.name, developer%></li>
+    <%end%>
+
+</ul>
+
+<!-- <%= link_to "About Page", developers_about_url %> -->

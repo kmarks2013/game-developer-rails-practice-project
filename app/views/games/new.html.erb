@@ -1,0 +1,16 @@
+<h1>Make a New Game </h1>
+
+<%= form_for @game do |f| %>
+    
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+
+    <%= f.label :price %>
+    <%= f.number_field :price %>
+    
+    <%= f.label :developer %>
+    <%= f.text_field :developers %>
+
+    <%= f.submit %>
+
+<%end%>

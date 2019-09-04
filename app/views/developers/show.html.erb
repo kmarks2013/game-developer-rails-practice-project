@@ -1,0 +1,28 @@
+<h1> Here is some information about <%=@developer.name%>!</h1>
+
+<h2>Name:<h2>
+
+<p><%=@developer.name%></p>
+
+<h2>CEO:</h2>
+
+<p><%=@developer.ceo%></p>
+
+<h2>Location:</h2>
+
+<p><%=@developer.location%></p>
+
+<h2>Games List</h2>
+
+<ul>
+    <%@games.each do |game|%>
+       <li> <%= link_to game.name, game%> </li>
+    <%end%>
+</ul>
+
+
+
+<%= link_to "Edit Developer", edit_developer_path%>
+<%= link_to "Delete Developer", @developer, method: :delete%>
+<%= link_to "Create Game", new_game_path%>
+
